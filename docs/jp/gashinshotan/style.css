@@ -1,32 +1,32 @@
 body {
     font-family: 'New Tegomin', 'Yu Mincho', 'Hiragino Mincho Pro', 'MS Mincho', serif;
-    background: #fffdf6; /* 明るい和紙風の背景色 */
-    color: #1a2636;      /* 濃い藍色で視認性UP */
+    line-height: 1.6;
+    color: #165e83; /* 藍色 */
+    background-color: #f8f5f0;
     margin: 0;
-    padding: 0;
-    line-height: 1.8;
+    padding: 20px;
 }
 
 .container {
-    max-width: 700px;
-    margin: 32px auto;
+    max-width: 900px;
+    margin: 20px auto;
     background: #fffaf4;
-    border: 2px solid #e94709;
-    border-radius: 18px;
-    box-shadow: 0 4px 16px rgba(180, 140, 80, 0.10);
-    padding: 32px 20px;
+    padding: 32px;
+    border: 2px solid #e94709; /* 朱色 */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(180, 140, 80, 0.08);
 }
 
 h1 {
     text-align: center;
-    color: #e94709;
-    font-size: 2.2em;
+    color: #e94709; /* 朱色 */
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    border-bottom: 3px solid #165e83; /* 藍色 */
+    padding-bottom: 18px;
     font-family: 'New Tegomin', 'Yu Mincho', serif;
     letter-spacing: 0.08em;
-    border-bottom: 3px solid #165e83;
-    padding-bottom: 14px;
-    margin-bottom: 28px;
-    background: linear-gradient(to right, #fbeee0 0%, #fffaf4 100%);
+    background: linear-gradient(to right, #fffaf4 0%, #f7e7c6 100%);
 }
 
 h2 {
@@ -42,7 +42,7 @@ h2 {
 .passage {
     margin-bottom: 1.5em;
     padding: 1em;
-    background-color: #f5f9ff; /* 淡い青系でコントラストUP */
+    background-color: #f7f3e9;
     border-left: 6px solid #e94709;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(180, 140, 80, 0.05);
@@ -51,45 +51,55 @@ h2 {
 .original {
     font-size: 1.1em;
     font-weight: bold;
-    color: #165e83;
+    color: #165e83; /* 藍色 */
     letter-spacing: 0.05em;
 }
 
 .japanese-reading {
     font-size: 1em;
-    color: #b48c50;
+    color: #b48c50; /* 落ち着いた茶色 */
     margin-top: 0.5em;
 }
 
 .modern-japanese {
     font-size: 1em;
     margin-top: 0.5em;
-    color: #e94709;
+    color: #e94709; /* 朱色でアクセント */
     font-style: italic;
 }
 
+/* スマホ対応のレスポンシブデザイン */
 @media (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
     .container {
         max-width: 100%;
-        padding: 10px 2px;
-        border-radius: 8px;
-        margin: 8px;
+        padding: 12px;
+        margin: 8px auto;
+        border-radius: 4px;
+        box-shadow: none;
     }
+
     h1 {
-        font-size: 1.3em;
-        margin-bottom: 18px;
-        padding-bottom: 6px;
+        font-size: 1.5em;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
     }
+
     h2 {
         font-size: 1em;
         margin-top: 1em;
         padding-bottom: 0.3em;
     }
+
     .passage {
-        padding: 0.6em;
-        margin-bottom: 1em;
+        padding: 12px;
+        margin-bottom: 16px;
         border-radius: 4px;
     }
+
     .original,
     .japanese-reading,
     .modern-japanese {
