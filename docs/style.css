@@ -1,149 +1,89 @@
 body {
     font-family: 'New Tegomin', 'Yu Mincho', 'Hiragino Mincho Pro', 'MS Mincho', serif;
-    line-height: 1.6;
-    color: #165e83; /* 藍色 */
-    background-color: #f8f5f0;
+    background: #f8f5f0;
+    color: #165e83;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 .container {
-    max-width: 900px;
-    margin: 20px auto;
+    max-width: 600px;
+    margin: 40px auto;
     background: #fffaf4;
-    padding: 32px;
-    border: 2px solid #e94709; /* 朱色 */
-    border-radius: 12px;
+    border: 2px solid #e94709;
+    border-radius: 16px;
     box-shadow: 0 4px 16px rgba(180, 140, 80, 0.08);
+    padding: 32px 20px;
 }
 
 h1 {
+    color: #e94709;
+    font-size: 2em;
     text-align: center;
-    color: #e94709; /* 朱色 */
-    margin-bottom: 40px;
-    font-size: 2.5em;
-    border-bottom: 3px solid #165e83; /* 藍色 */
-    padding-bottom: 18px;
+    margin-bottom: 32px;
     font-family: 'New Tegomin', 'Yu Mincho', serif;
     letter-spacing: 0.08em;
-    background: linear-gradient(to right, #fffaf4 0%, #f7e7c6 100%);
+    border-bottom: 2px solid #165e83;
+    padding-bottom: 12px;
 }
 
-.author-card {
-    background: #f7f3e9;
-    border: 1px solid #165e83; /* 藍色 */
+h2 {
+    text-align: center;
+    color: #165e83;
+    margin-bottom: 24px;
+    font-family: 'New Tegomin', 'Yu Mincho', serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-link {
+    display: block;
+    font-size: 1.2em;
+    padding: 1em;
+    background: #fffaf4;
     border-radius: 8px;
-    margin-bottom: 30px;
-    padding: 25px;
+    text-decoration: none;
+    margin-bottom: 1em;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
     box-shadow: 0 2px 8px rgba(180, 140, 80, 0.05);
 }
 
-.author-name {
-    color: #e94709; /* 朱色 */
-    font-size: 1.8em;
-    margin-top: 0;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    border-bottom: 1px dashed #165e83; /* 藍色 */
-    display: flex;
-    align-items: baseline;
-    font-family: 'New Tegomin', 'Yu Mincho', serif;
+.main-link:first-child {
+    border: 2px solid #e94709;
+    color: #165e83;
 }
 
-.author-name .ruby {
-    font-size: 0.7em;
-    color: #165e83; /* 藍色 */
-    margin-left: 10px;
-    letter-spacing: 0.05em;
+.main-link:last-child {
+    border: 2px solid #165e83;
+    color: #e94709;
 }
 
-.author-details {
-    padding-left: 15px;
+.main-link:hover {
+    box-shadow: 0 4px 16px rgba(180, 140, 80, 0.15);
+    transform: translateY(-2px) scale(1.03);
+    background: #f7e7c6;
 }
 
-.masterpieces-label {
-    font-weight: bold;
-    color: #e94709; /* 朱色 */
-    margin-bottom: 8px;
-}
-
-.masterpieces-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 20px;
-}
-
-.masterpieces-list li {
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 8px;
-    font-size: 0.95em;
-    color: #165e83; /* 藍色 */
-}
-
-.masterpieces-list li::before {
-    content: '◆';
-    color: #e94709; /* 朱色 */
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 1em;
-}
-
-.masterpieces-list strong {
-    color: #165e83; /* 藍色 */
-}
-
-.author-bio {
-    font-style: italic;
-    color: #165e83; /* 藍色 */
-    border-top: 1px dotted #e94709; /* 朱色 */
-    padding-top: 15px;
-    margin-top: 20px;
-    font-size: 0.9em;
-    line-height: 1.5;
-    background: #fffaf4;
-}
-
-/* スマホ対応のレスポンシブデザイン */
 @media (max-width: 600px) {
-    body {
-        padding: 8px;
-    }
-
     .container {
         max-width: 100%;
-        padding: 12px;
-        margin: 8px auto;
-        border-radius: 4px;
-        box-shadow: none;
+        margin: 12px;
+        padding: 12px 4px;
+        border-radius: 8px;
     }
-
     h1 {
-        font-size: 1.5em;
-        padding-bottom: 8px;
-        margin-bottom: 20px;
+        font-size: 1.3em;
+        margin-bottom: 18px;
+        padding-bottom: 6px;
     }
-
-    .author-card {
-        padding: 12px;
-        margin-bottom: 16px;
-    }
-
-    .author-name {
-        font-size: 1.2em;
-        padding-bottom: 3px;
-        margin-bottom: 8px;
-    }
-
-    .masterpieces-list li {
-        padding-left: 18px;
-        font-size: 0.9em;
-    }
-
-    .author-bio {
-        font-size: 0.85em;
-        padding-top: 8px;
-        margin-top: 12px;
+    .main-link {
+        font-size: 1em;
+        padding: 0.7em;
+        margin-bottom: 0.7em;
     }
 }

@@ -1,0 +1,149 @@
+body {
+    font-family: 'New Tegomin', 'Yu Mincho', 'Hiragino Mincho Pro', 'MS Mincho', serif;
+    line-height: 1.6;
+    color: #165e83; /* 藍色 */
+    background-color: #f8f5f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fffaf4;
+    padding: 32px;
+    border: 2px solid #e94709; /* 朱色 */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(180, 140, 80, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #e94709; /* 朱色 */
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    border-bottom: 3px solid #165e83; /* 藍色 */
+    padding-bottom: 18px;
+    font-family: 'New Tegomin', 'Yu Mincho', serif;
+    letter-spacing: 0.08em;
+    background: linear-gradient(to right, #fffaf4 0%, #f7e7c6 100%);
+}
+
+.author-card {
+    background: #f7f3e9;
+    border: 1px solid #165e83; /* 藍色 */
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(180, 140, 80, 0.05);
+}
+
+.author-name {
+    color: #e94709; /* 朱色 */
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #165e83; /* 藍色 */
+    display: flex;
+    align-items: baseline;
+    font-family: 'New Tegomin', 'Yu Mincho', serif;
+}
+
+.author-name .ruby {
+    font-size: 0.7em;
+    color: #165e83; /* 藍色 */
+    margin-left: 10px;
+    letter-spacing: 0.05em;
+}
+
+.author-details {
+    padding-left: 15px;
+}
+
+.masterpieces-label {
+    font-weight: bold;
+    color: #e94709; /* 朱色 */
+    margin-bottom: 8px;
+}
+
+.masterpieces-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.masterpieces-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    color: #165e83; /* 藍色 */
+}
+
+.masterpieces-list li::before {
+    content: '◆';
+    color: #e94709; /* 朱色 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1em;
+}
+
+.masterpieces-list strong {
+    color: #165e83; /* 藍色 */
+}
+
+.author-bio {
+    font-style: italic;
+    color: #165e83; /* 藍色 */
+    border-top: 1px dotted #e94709; /* 朱色 */
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    line-height: 1.5;
+    background: #fffaf4;
+}
+
+/* スマホ対応のレスポンシブデザイン */
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 12px;
+        margin: 8px auto;
+        border-radius: 4px;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+    }
+
+    .author-card {
+        padding: 12px;
+        margin-bottom: 16px;
+    }
+
+    .author-name {
+        font-size: 1.2em;
+        padding-bottom: 3px;
+        margin-bottom: 8px;
+    }
+
+    .masterpieces-list li {
+        padding-left: 18px;
+        font-size: 0.9em;
+    }
+
+    .author-bio {
+        font-size: 0.85em;
+        padding-top: 8px;
+        margin-top: 12px;
+    }
+}

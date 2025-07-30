@@ -1,0 +1,98 @@
+body {
+    font-family: 'New Tegomin', 'Yu Mincho', 'Hiragino Mincho Pro', 'MS Mincho', serif;
+    background: #fffbe6; /* 柔らかい和風の黄色 */
+    color: #234e70;      /* 深い青色 */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 700px;
+    margin: 32px auto;
+    background: #fffef7;
+    border: 2px solid #f7c114; /* 和風の黄色枠 */
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(36, 78, 112, 0.08);
+    padding: 32px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #234e70; /* 青色 */
+    font-size: 2.2em;
+    font-family: 'New Tegomin', 'Yu Mincho', serif;
+    letter-spacing: 0.08em;
+    border-bottom: 3px solid #f7c114; /* 黄色アクセント */
+    padding-bottom: 14px;
+    margin-bottom: 28px;
+    background: linear-gradient(to right, #fffbe6 0%, #fffef7 100%);
+}
+
+h2 {
+    color: #234e70;
+    border-bottom: 2px dashed #f7c114;
+    padding-bottom: 0.5em;
+    margin-top: 2em;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: 'New Tegomin', 'Yu Mincho', serif;
+}
+
+.passage {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background-color: #eaf6ff; /* 淡い青色でコントラストUP */
+    border-left: 6px solid #f7c114; /* 黄色アクセント */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(36, 78, 112, 0.05);
+}
+
+.original {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #234e70; /* 青色 */
+    letter-spacing: 0.05em;
+}
+
+.japanese-reading {
+    font-size: 1em;
+    color: #b48c50; /* 落ち着いた茶色 */
+    margin-top: 0.5em;
+}
+
+.modern-japanese {
+    font-size: 1em;
+    margin-top: 0.5em;
+    color: #f7c114; /* 黄色でアクセント */
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px 2px;
+        border-radius: 8px;
+        margin: 8px;
+    }
+    h1 {
+        font-size: 1.3em;
+        margin-bottom: 18px;
+        padding-bottom: 6px;
+    }
+    h2 {
+        font-size: 1em;
+        margin-top: 1em;
+        padding-bottom: 0.3em;
+    }
+    .passage {
+        padding: 0.6em;
+        margin-bottom: 1em;
+        border-radius: 4px;
+    }
+    .original,
+    .japanese-reading,
+    .modern-japanese {
+        font-size: 0.95em;
+    }
+}
